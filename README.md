@@ -3,8 +3,7 @@
 Randomized sketching for least squares and low-rank approximation: theory, a
 small Python library with C++ kernels, and experiments.
 
-Individual project in theoretical computer science (DD2467) at KTH,
-supervised by Ioana-Oriana Bercea, autumn 2026.
+Individual project in theoretical computer science (DD2467) at KTH, autumn 2026.
 
 ## What's here
 
