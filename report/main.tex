@@ -1,0 +1,65 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage[capitalise]{cleveref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\DeclareMathOperator{\nnz}{nnz}
+
+\title{Oblivious Subspace Embeddings for Least Squares\\and Low-Rank Approximation}
+\author{Erik Kronke\\\small DD2467 Individual Project in Theoretical Computer Science, KTH}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+TODO
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+% Motivation, contributions, related work.
+
+\section{Preliminaries}\label{sec:prelim}
+% Notation, SVD, sub-Gaussian concentration, Johnson--Lindenstrauss.
+
+\section{Subspace Embeddings}\label{sec:embeddings}
+\begin{definition}[Oblivious subspace embedding]
+A distribution over $S \in \R^{m \times n}$ is an $(\varepsilon,\delta,d)$-OSE if for every
+$A \in \R^{n \times d}$, with probability at least $1-\delta$,
+\[
+(1-\varepsilon)\|Ax\|_2 \le \|SAx\|_2 \le (1+\varepsilon)\|Ax\|_2 \quad \text{for all } x \in \R^d .
+\]
+\end{definition}
+\subsection{Gaussian sketches}
+\subsection{CountSketch and approximate matrix multiplication}
+\subsection{The subsampled randomized Hadamard transform}
+
+\section{Least Squares}\label{sec:ls}
+
+\section{Low-Rank Approximation}\label{sec:lra}
+\subsection{The randomized SVD}
+\subsection{The structural bound}
+\subsection{A subspace-embedding view}
+
+\section{Experiments}\label{sec:experiments}
+
+\section{Conclusion}\label{sec:conclusion}
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}
